@@ -1,0 +1,202 @@
+* {
+    font-family: Kanit;
+    color: white;
+    margin: 10px;
+}
+
+/* .box {
+    border: 1px solid white;
+    padding: 10px;
+} */
+
+@media screen and (min-width:1130px) {
+
+    body {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header navigation"
+            "sidebar content"
+            "footer footer";
+    
+    }
+}
+
+@media screen and (max-width:1130px) {
+
+    body {
+        grid-template-columns: 100%;
+        background-color: black;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "navigation"
+            "content"
+            "sidebar"
+            "footer";
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    body {
+        grid-template-columns: 100%;
+        background-color: black;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "navigation"
+            "content"
+    }
+}
+
+
+/* + Anfang Gridbox */
+
+
+
+
+main {
+    grid-area: content;
+    background-color: #510027;
+    border-radius: 30px;
+    
+}
+
+header {
+    border-radius: 30px;
+    background-color: #062500;
+    min-height: 110px;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    border-radius: 30px;
+    grid-area: navigation; 
+    background-color: #062500;
+   
+}
+
+aside {
+    border-radius: 30px;
+    grid-area: sidebar;
+
+}
+
+footer {
+    grid-area: footer;
+    border-radius: 30px;
+}
+
+
+/* - Ende Gridbox */
+
+/* + Anfang Navigationbar */
+.nav-items {
+    overflow: hidden;
+
+}
+
+.nav-items a {
+    transition: all 0.5s ease 0s;
+    float: right;
+    color: #ffffff;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-items a:hover {
+    transition: all 0.5s ease 0s;
+    background-color: #ffffff;
+    color: black;
+
+
+}
+
+.nav-items a.active {
+    border-radius: 10px;
+    border: 2px solid green;
+    color: green;
+}
+
+/* - Ende Navigationbar */
+
+/* + Anfang Header */
+
+
+.logo {
+    height: auto;
+    width: 90px;
+    top: auto;
+    border-radius: 30px;
+    transition: all 0.5s ease 0s;
+    float: left;
+}
+
+.logo:hover {
+    transition: all 0.5s ease 0s;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.title {
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+/* - Ende Header */
+
+input {
+    color: black;   
+}
+
+/* + Form */
+
+form {
+    float: inline-start;
+}
+
+/* - Form */
+
+/* + Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+/* - Footer */
+
+/* + Aside */
+
+.asidepic {
+    display: inline;
+    height: fit-content;
+    width: 70%;
+}
+
+#f {
+    background-image: url(thumbsup.webp);
+    /* background-repeat: no-repeat; */
+    background-position: top right;
+
+}
+
+
+/* - Aside */
+
+.impressum {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+}
