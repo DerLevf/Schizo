@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (min-width:1111px) {
+@media screen and (min-width:1130px) {
 
     body {
         grid-template-columns: 100%;
@@ -39,7 +39,7 @@
     }
 }
 
-/* @media screen and (max-width: 790px) {
+@media screen and (max-width: 790px) {
 
     body {
         grid-template-columns: 100%;
@@ -50,7 +50,8 @@
             "navigation"
             "content"
     }
-} */
+}
+
 
 
 /* + Anfang Gridbox */
