@@ -9,7 +9,7 @@
     padding: 10px;
 } */
 
-@media screen and (min-width:1130px) {
+@media screen and (min-width:1500px) {
 
     body {
         background-color: black;
@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (max-width:1130px) {
+@media screen and (max-width:1500px) {
 
     body {
         grid-template-columns: 100%;
