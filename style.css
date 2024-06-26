@@ -9,7 +9,7 @@
     padding: 10px;
 } */
 
-@media screen and (min-width:1500px) {
+@media screen and (min-width:1130px) {
 
     body {
         background-color: black;
@@ -24,7 +24,7 @@
     }
 }
 
-@media screen and (min-width:1130px) {
+@media screen and (max-width:1130px) {
 
     body {
         grid-template-columns: 100%;
@@ -36,19 +36,6 @@
             "content"
             "sidebar"
             "footer";
-    }
-}
-
-@media screen and (max-width: 790px) {
-
-    body {
-        grid-template-columns: 100%;
-        background-color: black;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "header"
-            "navigation"
-            "content"
     }
 }
 
