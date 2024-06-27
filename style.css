@@ -9,7 +9,40 @@
     padding: 10px;
 } */
 
-@media screen and (min-width:1130px) {
+@media (min-width: 790px) {
+
+    body {
+        grid-template-columns: 100%;
+        background-color: black;
+        grid-template-rows: auto;
+        
+        grid-template-areas:
+            "header"
+            "navigation"
+            "content" 
+            "footer";
+      
+    }
+}
+
+@media (min-width:1000px) {
+
+    body {
+        grid-template-columns: 100%;
+        background-color: black;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "navigation"
+            "content"
+            "sidebar"
+            "footer";
+        grid-template-columns: 3fr 1fr;
+        
+    }
+}
+
+@media (min-width:1400px) {
 
     body {
         background-color: black;
@@ -24,20 +57,10 @@
     }
 }
 
-@media screen and (max-width:1130px) {
 
-    body {
-        grid-template-columns: 100%;
-        background-color: black;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "header"
-            "navigation"
-            "content"
-            "sidebar"
-            "footer";
-    }
-}
+
+
+
 
 
 
@@ -84,10 +107,10 @@ footer {
 /* - Ende Gridbox */
 
 /* + Anfang Navigationbar */
-.nav-items {
+/* .nav-items {
     overflow: hidden;
 
-}
+} */
 
 .nav-items a {
     transition: all 0.5s ease 0s;
@@ -118,9 +141,9 @@ footer {
 
 
 .logo {
-    height: auto;
+    /* height: auto; */
     width: 90px;
-    top: auto;
+    /* top: auto; */
     border-radius: 30px;
     transition: all 0.5s ease 0s;
     float: left;
@@ -167,11 +190,11 @@ footer {
 
 /* + Aside */
 
-.asidepic {
+/* .asidepic {
     display: inline;
     height: fit-content;
     width: 70%;
-}
+} */
 
 #f {
     background-image: url(thumbsup.webp);
@@ -180,11 +203,20 @@ footer {
 
 }
 
-
-/* - Aside */
-
-.impressum {
-    display: inline;
-    flex-direction: row;
-    justify-content: space-between;
-}
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
